@@ -12,6 +12,7 @@ async function logger(text) {
   await fs.appendFile(path.resolve("log.txt"), text);
   await delay();
 }
+
 const numberPage = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 (async () => {
   for (const numPage of numberPage) {
